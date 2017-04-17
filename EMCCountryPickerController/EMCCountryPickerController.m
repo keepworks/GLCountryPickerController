@@ -63,6 +63,10 @@ static const CGFloat kEMCCountryCellControllerMinCellHeight = 25;
     [self validateSettings];
     [self loadCountries];
     
+    UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"CLOSE", nil) style:UIBarButtonItemStylePlain target:self action:@selector(dismissView)];
+    self.navigationItem.leftBarButtonItems = nil;
+    self.navigationItem.leftBarButtonItem = cancelButton;
+    
     if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1)
     {
         [rootView addConstraint:[NSLayoutConstraint constraintWithItem:searchBar
@@ -156,6 +160,11 @@ static const CGFloat kEMCCountryCellControllerMinCellHeight = 25;
     [self loadCountrySelection];
 }
 
+- (void)dismissView
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+    
 - (void)loadCountrySelection
 {
     if (!_selectedCountry)
