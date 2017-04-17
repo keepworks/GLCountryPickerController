@@ -32,7 +32,7 @@
 
 - (void)countryController:(id)sender didSelectCountry:(EMCCountry *)chosenCity
 {
-    self.countryLabel.text = chosenCity.countryName;
+    self.countryLabel.text = chosenCity.name;
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -44,7 +44,7 @@
 
         // default values
         countryPicker.showFlags = true;
-        countryPicker.countryDelegate = self;
+        countryPicker.delegate = self;
         countryPicker.drawFlagBorder = true;
         countryPicker.flagBorderColor = [UIColor grayColor];
         countryPicker.flagBorderWidth = 0.5f;

@@ -14,8 +14,8 @@
 
 + (instancetype)countryWithCountryCode:(NSString *)code;
 - (instancetype)initWithCountryCode:(NSString *)code;
-- (NSString *)countryName;
-- (NSString *)countryDialCode;
+- (NSString *)name;
+- (NSString *)dialingCode;
 - (NSString *)countryNameWithLocale:(NSLocale *)locale;
 - (NSString *)countryNameWithLocaleIdentifier:(NSString *)localeIdentifier;
 

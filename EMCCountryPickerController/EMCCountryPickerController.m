@@ -269,7 +269,7 @@ static const CGFloat kEMCCountryCellControllerMinCellHeight = 25;
         _selectedCountry = [_countries objectAtIndex:indexPath.row];
     }
     
-    if (!self.countryDelegate)
+    if (!self.delegate)
     {
         NSLog(@"Delegate is not set, the view controller will not be dismissed.");
     }
@@ -278,7 +278,7 @@ static const CGFloat kEMCCountryCellControllerMinCellHeight = 25;
         self.onCountrySelected(_selectedCountry);
     }
     
-    [self.countryDelegate countryController:self didSelectCountry:_selectedCountry];
+    [self.delegate countryController:self didSelectCountry:_selectedCountry];
 }
 
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -311,11 +311,11 @@ static const CGFloat kEMCCountryCellControllerMinCellHeight = 25;
     {
         if (self.showDialingCodes)
         {
-            cell.textLabel.text = [NSString stringWithFormat:@"%@ (%@)", [currentCountry countryName], [currentCountry countryDialCode]];
+            cell.textLabel.text = [NSString stringWithFormat:@"%@ (%@)", [currentCountry name], [currentCountry dialingCode]];
         }
         else
         {
-            [currentCountry countryName];
+            cell.textLabel.text = [currentCountry name];
         }
     }
         
@@ -424,7 +424,7 @@ static const CGFloat kEMCCountryCellControllerMinCellHeight = 25;
         availableCountries = [[EMCCountryManager countryManager] allCountries];
     }
     
-    NSSortDescriptor *nameDescriptor = [[NSSortDescriptor alloc] initWithKey:@"countryName" ascending:YES];
+    NSSortDescriptor *nameDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
     NSArray *descriptors = [NSArray arrayWithObjects:nameDescriptor, nil];
     _countries = [availableCountries sortedArrayUsingDescriptors:descriptors];
 }

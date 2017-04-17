@@ -57,12 +57,12 @@ static NSString * const kDefaultLocale = @"en";
     return [[self countryCode] isEqualToString:[aCountry countryCode]];
 }
 
-- (NSString *)countryName
+- (NSString *)name
 {
     return [self countryNameWithLocaleIdentifier:[[NSLocale preferredLanguages] objectAtIndex:0]];
 }
     
-- (NSString *)countryDialCode
+- (NSString *)dialingCode
 {
     NSBundle *bundle = [NSBundle bundleForClass:[self class]];
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"code == %@", _countryCode];
