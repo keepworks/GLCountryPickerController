@@ -363,7 +363,7 @@ static const CGFloat kEMCCountryCellControllerMinCellHeight = 25;
                              scope:(NSString*)scope
 {
     NSPredicate *resultPredicate = [NSPredicate
-                                    predicateWithFormat:@"SELF.countryName contains[cd] %@",
+                                    predicateWithFormat:@"SELF.name contains[cd] %@",
                                     searchText];
     
     _countrySearchResults = [_countries filteredArrayUsingPredicate:resultPredicate];
