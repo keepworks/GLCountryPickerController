@@ -220,6 +220,7 @@ static const CGFloat kEMCCountryCellControllerMinCellHeight = 25;
 {
     self.showFlags = true;
     self.drawFlagBorder = true;
+    self.showDialingCodes = true;
     self.flagBorderColor = [UIColor grayColor];
     self.flagBorderWidth = 0.5f;
     self.flagSize = 40.0f;
@@ -308,9 +309,16 @@ static const CGFloat kEMCCountryCellControllerMinCellHeight = 25;
     }
     else
     {
-        cell.textLabel.text = [currentCountry countryName];
+        if (self.showDialingCodes)
+        {
+            cell.textLabel.text = [NSString stringWithFormat:@"%@ (%@)", [currentCountry countryName], [currentCountry countryDialCode]];
+        }
+        else
+        {
+            [currentCountry countryName];
+        }
     }
-    
+        
     // Resize flag
     if (self.showFlags)
     {

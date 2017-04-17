@@ -19,6 +19,7 @@
 @property (copy) NSSet *availableCountryCodes;
 @property NSLocale *countryNameDisplayLocale;
 @property BOOL showFlags;
+@property BOOL showDialingCodes;
 @property BOOL drawFlagBorder;
 @property CGFloat flagSize;
 @property UIColor *flagBorderColor;

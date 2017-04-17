@@ -48,9 +48,16 @@ static EMCCountryManager *_countryManager;
 {
     NSBundle *bundle = [NSBundle bundleForClass:[self class]];
     
-    NSString *countriesPath = [bundle pathForResource:@"EMCCountryPickerController.bundle/countries" ofType:@"plist"];
+    NSString *countriesPath = [bundle pathForResource:@"EMCCountryPickerController.bundle/CallingCodes" ofType:@"plist"];
     
     countriesArray = [NSArray arrayWithContentsOfFile:countriesPath];
+    NSMutableArray *formattedCountries = [NSMutableArray array];
+    for (NSDictionary *details in countriesArray)
+    {
+        [formattedCountries addObject:[details valueForKey:@"code"]];
+    }
+    
+    countriesArray = formattedCountries.mutableCopy;
     
     if (!countriesArray)
     {
