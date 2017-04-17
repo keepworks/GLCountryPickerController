@@ -292,6 +292,7 @@ static const CGFloat kEMCCountryCellControllerMinCellHeight = 25;
         self.onCountrySelected(_selectedCountry);
     }
     
+    [self.view endEditing:YES];
     [self.delegate countryController:self didSelectCountry:_selectedCountry];
 }
 
