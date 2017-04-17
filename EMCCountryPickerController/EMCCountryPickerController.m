@@ -65,12 +65,9 @@ static const CGFloat kEMCCountryCellControllerMinCellHeight = 25;
     [self validateSettings];
     [self loadCountries];
     
-    if (self.presentingViewController)
-    {
-        UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithTitle:UIKitLocalizedString(@"Cancel") style:UIBarButtonItemStylePlain target:self action:@selector(dismissView)];
-        self.navigationItem.leftBarButtonItems = nil;
-        self.navigationItem.leftBarButtonItem = cancelButton;
-    }
+    UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithTitle:UIKitLocalizedString(@"Cancel") style:UIBarButtonItemStylePlain target:self action:@selector(dismissView)];
+    self.navigationItem.leftBarButtonItems = nil;
+    self.navigationItem.leftBarButtonItem = cancelButton;
     
     if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1)
     {
