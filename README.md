@@ -1,10 +1,12 @@
-EMCCountryPickerController
+EMCCountryPickerController+DialingCodes
 ==========================
 
-`EMCCountryPickerController` is a view controller that allow users to choose
+`EMCCountryPickerController+DialingCodes` is a view controller that allow users to choose
 a country from a searchable list.  The available countries are taken from the
 [ISO 3166-1 standard][iso3166], whose [ISO 3166-1 alpha-2][iso31662] two-letter
-country codes are used by the API to represent countries.
+country codes are used by the API to represent countries, and international call dialing codes are also available
+
+This pod is based on the EMCCountryPickerController
 
 [iso3166]: http://en.wikipedia.org/wiki/ISO_3166
 [iso31662]: http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
@@ -22,6 +24,7 @@ This library provides the following features:
   * The flag border color and size can be customised and optionally hidden.
   * All the countries assigned a [ISO 3166-1 alpha-2][iso31662] two-letter code
     are available.
+  * International call dialing codes.
   * The list of countries presented by the controller can be filtered.
   * Countries are localised through the NSLocale API methods
 
@@ -122,6 +125,14 @@ countryPicker.availableCountryCodes = [NSSet setWithObjects:@"IT", @"ES", @"US",
 ```
 
 ![Main view](/Screenshots/main-view-subset.png "Main View - Subset of Countries")
+
+Showing Call Dialing codes
+------------------------
+
+Flags are shown by default and can be disabled using the property
+`BOOL showDialingCodes`.
+
+![Main view](/Screenshots/main-view-dialing-codes.png "DialingCodes")
 
 Showing and Hiding Flags
 ------------------------
