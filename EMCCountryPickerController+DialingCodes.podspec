@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "EMCCountryPickerController+DialingCodes"
-  s.version      = "1.4.1"
+  s.version      = "1.4.2"
   s.summary      = "EMCCountryPickerController+Dialing is allows users to choose and filter countries in a list. Provides flags, dialing codes and country codes"
   s.description  = <<-DESC
                    `EMCCountryPickerController` is a view controller that allow users to choose
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.author             = { "Amila Dimantha" => "http://thegreyblog.blogspot.com/" }
   s.social_media_url   = ""
   s.platform     = :ios, "6.1"
-  s.source       = { :git => "https://github.com/AmilaDiman/EMCCountryPickerController-DialingCodes.git", :tag => "1.4.1" }
+  s.source       = { :git => "https://github.com/AmilaDiman/EMCCountryPickerController-DialingCodes.git", :tag => "1.4.2" }
   s.source_files  = "EMCCountryPickerController", "EMCCountryPickerController/**/*.{h,m}"
   s.exclude_files = "EMCCountryPickerController/Exclude"
   s.resources = "EMCCountryPickerController/EMCCountryPickerController.bundle"
