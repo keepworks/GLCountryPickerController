@@ -55,6 +55,12 @@ compilation will fail if ARC support is not available.
 
 Usage
 -----
+To install via CocoaPods, add the follwing to your podfile
+
+```
+pod 'EMCCountryPickerController+DialingCodes', '~> 1.4
+```
+To import the pod to a Swift project use `import EMCCountryPickerController_DialingCodes` 
 
 The `EMCCountryPickerController` must be presented modally by the presenting
 view controller.  The `EMCCountryPickerController` won't dismiss itself when a
