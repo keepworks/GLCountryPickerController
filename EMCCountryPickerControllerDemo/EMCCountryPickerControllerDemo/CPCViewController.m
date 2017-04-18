@@ -13,6 +13,9 @@
 
 @property (weak, nonatomic) IBOutlet UISwitch *allCountriesSwitch;
 @property (weak, nonatomic) IBOutlet UISwitch *smallFlagsSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *dialingCodesSwitch;
+@property (weak, nonatomic) IBOutlet UILabel *codeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dialingCodeLabel;
 
 @end
 
@@ -33,6 +36,9 @@
 - (void)countryController:(id)sender didSelectCountry:(EMCCountry *)chosenCity
 {
     self.countryLabel.text = chosenCity.name;
+    self.codeLabel.text = chosenCity.countryCode;
+    self.dialingCodeLabel.text = chosenCity.dialingCode;
+    
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -52,6 +58,11 @@
         if ([self.smallFlagsSwitch isOn])
         {
             countryPicker.flagSize = 20;
+        }
+        
+        if (![self.dialingCodesSwitch isOn])
+        {
+            countryPicker.showDialingCodes = NO;
         }
         
         if (![self.allCountriesSwitch isOn])
