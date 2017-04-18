@@ -55,20 +55,14 @@ compilation will fail if ARC support is not available.
 
 Usage
 -----
-To install via CocoaPods, add the follwing to your podfile
-
-```
-pod 'EMCCountryPickerController+DialingCodes', '~> 1.4
-```
-To import the pod to a Swift project use `import EMCCountryPickerController_DialingCodes` 
 
 The `EMCCountryPickerController` must be presented modally by the presenting
 view controller.  The `EMCCountryPickerController` won't dismiss itself when a
 country is chosen.  Instead, `EMCCountryPickerController` instance will rely on
 a delegate conforming to the `EMCCountryDelegate` protocol to receive the
 country selection event and to dismiss it.  The delegate can be set either in
-Interface Builder using the `countryDelegate` outlet or programmatically using
-the `countryDelegate` property.  When using a storyboard, since an outlet
+Interface Builder using the `delegate` outlet or programmatically using
+the `delegate` property.  When using a storyboard, since an outlet
 cannot be connected to a controller in another controller, the controller setup
 is usually performed in `prepareForSegue:sender:`:
 
@@ -78,7 +72,7 @@ is usually performed in `prepareForSegue:sender:`:
     if ([segue.identifier isEqualToString:@"openCountryPicker"])
     {
         EMCCountryPickerController *countryPicker = segue.destinationViewController;
-        countryPicker.countryDelegate = self;
+        countryPicker.delegate = self;
     }
 }
 ```
@@ -135,7 +129,7 @@ countryPicker.availableCountryCodes = [NSSet setWithObjects:@"IT", @"ES", @"US",
 Showing Call Dialing codes
 ------------------------
 
-Flags are shown by default and can be disabled using the property
+Country codes are shown by default and can be disabled using the property
 `BOOL showDialingCodes`.
 
 ![Main view](/Screenshots/main-view-dialing-codes.png "DialingCodes")
@@ -186,10 +180,12 @@ highlighting the library major features is shipped with the library code.
 Installation with CocoaPods
 ---------------------------
 
-`EMCCountryPickerController` is available through [CocoaPods][cocoapods] and a
+`EMCCountryPickerController+DialingCodes` is available through [CocoaPods][cocoapods] and a
 dependency to it can be added to your Podfile:
 
-    pod 'EMCCountryPickerController', ~> '1.0'
+    pod 'EMCCountryPickerController+DialingCodes', '~> 1.4
+
+To import the pod to a Swift project use `import EMCCountryPickerController_DialingCodes` 
 
 [cocoapods]: http://cocoapods.org
 
