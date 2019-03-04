@@ -87,4 +87,10 @@ static NSString * const kDefaultLocale = @"en";
     return [self countryNameWithLocale:locale];
 }
 
+/* 国旗对象 */
+- (UIImage * _Nullable)nationalFlag {
+    
+    UIImage *flagImg = [UIImage imageNamed:[NSString stringWithFormat:@"EMCCountryPickerController.bundle/%@.png",_countryCode]];
+    return flagImg;
+}
 @end

@@ -7,10 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "EMCCountry.h"
+@class EMCCountry;
 
 @protocol EMCCountryDelegate <NSObject>
 
+@required
+
+/**
+ 点击的回调
+
+ @param sender 选择国家的控制器
+ @param chosenCountry 选择的国家
+ */
 - (void)countryController:(id)sender didSelectCountry:(EMCCountry *)chosenCountry;
 
 @end

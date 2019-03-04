@@ -10,18 +10,18 @@
 		8CA8FDAC1C550DEA004B8A13 /* EMCCountry.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA8FDA31C550DEA004B8A13 /* EMCCountry.m */; };
 		8CA8FDAD1C550DEA004B8A13 /* EMCCountryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA8FDA61C550DEA004B8A13 /* EMCCountryManager.m */; };
 		8CA8FDAE1C550DEA004B8A13 /* EMCCountryPickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8CA8FDA71C550DEA004B8A13 /* EMCCountryPickerController.bundle */; };
-		8CA8FDAF1C550DEA004B8A13 /* EMCCountryPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA8FDA91C550DEA004B8A13 /* EMCCountryPickerController.m */; };
-		8CA8FDB01C550DEA004B8A13 /* UIImage+UIImage_EMCImageResize.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA8FDAB1C550DEA004B8A13 /* UIImage+UIImage_EMCImageResize.m */; };
 		90FE0BAF192F99650056E748 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90FE0BAE192F99650056E748 /* Foundation.framework */; };
 		90FE0BB1192F99650056E748 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90FE0BB0192F99650056E748 /* CoreGraphics.framework */; };
 		90FE0BB3192F99650056E748 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90FE0BB2192F99650056E748 /* UIKit.framework */; };
 		90FE0BB9192F99650056E748 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90FE0BB7192F99650056E748 /* InfoPlist.strings */; };
 		90FE0BBB192F99650056E748 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FE0BBA192F99650056E748 /* main.m */; };
 		90FE0BBF192F99650056E748 /* CPCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FE0BBE192F99650056E748 /* CPCAppDelegate.m */; };
-		90FE0BC2192F99660056E748 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90FE0BC0192F99660056E748 /* Main_iPhone.storyboard */; };
-		90FE0BC5192F99660056E748 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90FE0BC3192F99660056E748 /* Main_iPad.storyboard */; };
-		90FE0BC8192F99660056E748 /* CPCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FE0BC7192F99660056E748 /* CPCViewController.m */; };
 		90FE0BCA192F99660056E748 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90FE0BC9192F99660056E748 /* Images.xcassets */; };
+		F8C737C4222918EB002E50E5 /* DemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C737C2222918EB002E50E5 /* DemoController.m */; };
+		F8C737C5222918EB002E50E5 /* DemoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8C737C3222918EB002E50E5 /* DemoController.xib */; };
+		F8C737C722292231002E50E5 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8C737C622292231002E50E5 /* Launch Screen.storyboard */; };
+		F8C737CC22292771002E50E5 /* CountryPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C737C822292771002E50E5 /* CountryPickerController.m */; };
+		F8C737CD22292771002E50E5 /* CountryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C737CB22292771002E50E5 /* CountryCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,10 +31,6 @@
 		8CA8FDA51C550DEA004B8A13 /* EMCCountryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCCountryManager.h; sourceTree = "<group>"; };
 		8CA8FDA61C550DEA004B8A13 /* EMCCountryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMCCountryManager.m; sourceTree = "<group>"; };
 		8CA8FDA71C550DEA004B8A13 /* EMCCountryPickerController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EMCCountryPickerController.bundle; sourceTree = "<group>"; };
-		8CA8FDA81C550DEA004B8A13 /* EMCCountryPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCCountryPickerController.h; sourceTree = "<group>"; };
-		8CA8FDA91C550DEA004B8A13 /* EMCCountryPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMCCountryPickerController.m; sourceTree = "<group>"; };
-		8CA8FDAA1C550DEA004B8A13 /* UIImage+UIImage_EMCImageResize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+UIImage_EMCImageResize.h"; sourceTree = "<group>"; };
-		8CA8FDAB1C550DEA004B8A13 /* UIImage+UIImage_EMCImageResize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+UIImage_EMCImageResize.m"; sourceTree = "<group>"; };
 		90FE0BAB192F99650056E748 /* EMCCountryPickerControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EMCCountryPickerControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90FE0BAE192F99650056E748 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		90FE0BB0192F99650056E748 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,11 +41,16 @@
 		90FE0BBC192F99650056E748 /* EMCCountryPickerControllerDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EMCCountryPickerControllerDemo-Prefix.pch"; sourceTree = "<group>"; };
 		90FE0BBD192F99650056E748 /* CPCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPCAppDelegate.h; sourceTree = "<group>"; };
 		90FE0BBE192F99650056E748 /* CPCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPCAppDelegate.m; sourceTree = "<group>"; };
-		90FE0BC1192F99660056E748 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		90FE0BC4192F99660056E748 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		90FE0BC6192F99660056E748 /* CPCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPCViewController.h; sourceTree = "<group>"; };
-		90FE0BC7192F99660056E748 /* CPCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPCViewController.m; sourceTree = "<group>"; };
 		90FE0BC9192F99660056E748 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F81AD188222CCA3400CBF978 /* CountryPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountryPicker.h; sourceTree = "<group>"; };
+		F8C737C1222918EB002E50E5 /* DemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoController.h; sourceTree = "<group>"; };
+		F8C737C2222918EB002E50E5 /* DemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoController.m; sourceTree = "<group>"; };
+		F8C737C3222918EB002E50E5 /* DemoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoController.xib; sourceTree = "<group>"; };
+		F8C737C622292231002E50E5 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		F8C737C822292771002E50E5 /* CountryPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryPickerController.m; sourceTree = "<group>"; };
+		F8C737C922292771002E50E5 /* CountryPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountryPickerController.h; sourceTree = "<group>"; };
+		F8C737CA22292771002E50E5 /* CountryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountryCell.h; sourceTree = "<group>"; };
+		F8C737CB22292771002E50E5 /* CountryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,10 +76,11 @@
 				8CA8FDA41C550DEA004B8A13 /* EMCCountryDelegate.h */,
 				8CA8FDA51C550DEA004B8A13 /* EMCCountryManager.h */,
 				8CA8FDA61C550DEA004B8A13 /* EMCCountryManager.m */,
-				8CA8FDA81C550DEA004B8A13 /* EMCCountryPickerController.h */,
-				8CA8FDA91C550DEA004B8A13 /* EMCCountryPickerController.m */,
-				8CA8FDAA1C550DEA004B8A13 /* UIImage+UIImage_EMCImageResize.h */,
-				8CA8FDAB1C550DEA004B8A13 /* UIImage+UIImage_EMCImageResize.m */,
+				F8C737CA22292771002E50E5 /* CountryCell.h */,
+				F8C737CB22292771002E50E5 /* CountryCell.m */,
+				F8C737C922292771002E50E5 /* CountryPickerController.h */,
+				F8C737C822292771002E50E5 /* CountryPickerController.m */,
+				F81AD188222CCA3400CBF978 /* CountryPicker.h */,
 			);
 			name = EMCCountryPickerController;
 			path = ../EMCCountryPickerController;
@@ -117,11 +119,11 @@
 			children = (
 				90FE0BBD192F99650056E748 /* CPCAppDelegate.h */,
 				90FE0BBE192F99650056E748 /* CPCAppDelegate.m */,
-				90FE0BC6192F99660056E748 /* CPCViewController.h */,
-				90FE0BC7192F99660056E748 /* CPCViewController.m */,
+				F8C737C1222918EB002E50E5 /* DemoController.h */,
+				F8C737C2222918EB002E50E5 /* DemoController.m */,
+				F8C737C3222918EB002E50E5 /* DemoController.xib */,
 				90FE0BC9192F99660056E748 /* Images.xcassets */,
-				90FE0BC3192F99660056E748 /* Main_iPad.storyboard */,
-				90FE0BC0192F99660056E748 /* Main_iPhone.storyboard */,
+				F8C737C622292231002E50E5 /* Launch Screen.storyboard */,
 				90FE0BB5192F99650056E748 /* Supporting Files */,
 			);
 			path = EMCCountryPickerControllerDemo;
@@ -167,6 +169,11 @@
 				CLASSPREFIX = CPC;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Enrico M. Crisostomo";
+				TargetAttributes = {
+					90FE0BAA192F99650056E748 = {
+						DevelopmentTeam = 9RJ9BYTDZ3;
+					};
+				};
 			};
 			buildConfigurationList = 90FE0BA6192F99650056E748 /* Build configuration list for PBXProject "EMCCountryPickerControllerDemo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -191,10 +198,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8C737C5222918EB002E50E5 /* DemoController.xib in Resources */,
 				8CA8FDAE1C550DEA004B8A13 /* EMCCountryPickerController.bundle in Resources */,
-				90FE0BC5192F99660056E748 /* Main_iPad.storyboard in Resources */,
 				90FE0BCA192F99660056E748 /* Images.xcassets in Resources */,
-				90FE0BC2192F99660056E748 /* Main_iPhone.storyboard in Resources */,
+				F8C737C722292231002E50E5 /* Launch Screen.storyboard in Resources */,
 				90FE0BB9192F99650056E748 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,13 +213,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8C737CC22292771002E50E5 /* CountryPickerController.m in Sources */,
 				8CA8FDAC1C550DEA004B8A13 /* EMCCountry.m in Sources */,
-				90FE0BC8192F99660056E748 /* CPCViewController.m in Sources */,
-				8CA8FDAF1C550DEA004B8A13 /* EMCCountryPickerController.m in Sources */,
-				8CA8FDB01C550DEA004B8A13 /* UIImage+UIImage_EMCImageResize.m in Sources */,
+				F8C737C4222918EB002E50E5 /* DemoController.m in Sources */,
 				90FE0BBB192F99650056E748 /* main.m in Sources */,
 				8CA8FDAD1C550DEA004B8A13 /* EMCCountryManager.m in Sources */,
 				90FE0BBF192F99650056E748 /* CPCAppDelegate.m in Sources */,
+				F8C737CD22292771002E50E5 /* CountryCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,22 +232,6 @@
 				90FE0BB8192F99650056E748 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		90FE0BC0192F99660056E748 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				90FE0BC1192F99660056E748 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		90FE0BC3192F99660056E748 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				90FE0BC4192F99660056E748 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -324,10 +315,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 9RJ9BYTDZ3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EMCCountryPickerControllerDemo/EMCCountryPickerControllerDemo-Prefix.pch";
 				INFOPLIST_FILE = "EMCCountryPickerControllerDemo/EMCCountryPickerControllerDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.blogspot.thegreyblog.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -339,10 +331,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 9RJ9BYTDZ3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EMCCountryPickerControllerDemo/EMCCountryPickerControllerDemo-Prefix.pch";
 				INFOPLIST_FILE = "EMCCountryPickerControllerDemo/EMCCountryPickerControllerDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.blogspot.thegreyblog.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

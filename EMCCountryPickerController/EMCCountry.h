@@ -7,16 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
-
+NS_ASSUME_NONNULL_BEGIN
 @interface EMCCountry : NSObject
 
 @property (readonly) NSString *countryCode;
 
 + (instancetype)countryWithCountryCode:(NSString *)code;
 - (instancetype)initWithCountryCode:(NSString *)code;
+/* 国家名称 */
 - (NSString *)name;
+/* 电话国家区号 */
 - (NSString *)dialingCode;
+/* 对国家名称进行国际化 */
 - (NSString *)countryNameWithLocale:(NSLocale *)locale;
+/* 根据传入的本地化标识对国家名称进行h国际化 */
 - (NSString *)countryNameWithLocaleIdentifier:(NSString *)localeIdentifier;
-
+/* 国旗对象 */
+- (UIImage * _Nullable)nationalFlag;
 @end
+NS_ASSUME_NONNULL_END

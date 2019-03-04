@@ -7,12 +7,22 @@
 //
 
 #import "CPCAppDelegate.h"
+#import "DemoController.h"
+
+@interface CPCAppDelegate ()
+
+@end
 
 @implementation CPCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    UINavigationController *naVC = [[UINavigationController alloc] initWithRootViewController:[[DemoController alloc] initWithNibName:NSStringFromClass([DemoController class]) bundle:nil]];
+    [self.window setRootViewController:naVC];
+   
     return YES;
 }
 							
