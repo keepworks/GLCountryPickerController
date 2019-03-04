@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "GLCountryPicker.h"
 
-@interface ViewController ()
+@interface ViewController ()<GLCountryDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *countryIconView;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dialingCodesLabel;
