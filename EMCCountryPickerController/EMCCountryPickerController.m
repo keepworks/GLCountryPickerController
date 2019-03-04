@@ -1,16 +1,16 @@
 //
-//  CountryPickerController.m
+//  EMCCountryPickerController.m
 //  EMCCountryPickerController
 //
 //  Created by walker on 2018/9/17.
 //  Copyright © 2018年 Enrico. All rights reserved.
 //
 
-#import "CountryPickerController.h"
+#import "EMCCountryPickerController.h"
 #import "EMCCountryManager.h"
-#import "CountryCell.h"
+#import "EMCCountryCell.h"
 
-@interface CountryPickerController ()<UITableViewDelegate, UITableViewDataSource,UISearchControllerDelegate, UISearchBarDelegate,UISearchResultsUpdating>
+@interface EMCCountryPickerController ()<UITableViewDelegate, UITableViewDataSource,UISearchControllerDelegate, UISearchBarDelegate,UISearchResultsUpdating>
 
 /** 列表 */
 @property (strong, nonatomic) UITableView *listView;
@@ -40,7 +40,7 @@
 
 
 static NSString *const countryPicker_listView_cell_id_1 = @"countryPicker_listView_cell_id_1";
-@implementation CountryPickerController
+@implementation EMCCountryPickerController
 
 /**
  初始化
@@ -178,7 +178,7 @@ static NSString *const countryPicker_listView_cell_id_1 = @"countryPicker_listVi
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CountryCell *cell = [tableView dequeueReusableCellWithIdentifier:countryPicker_listView_cell_id_1 forIndexPath:indexPath];
+    EMCCountryCell *cell = [tableView dequeueReusableCellWithIdentifier:countryPicker_listView_cell_id_1 forIndexPath:indexPath];
     
     EMCCountry *currentCountry;
 
@@ -292,7 +292,7 @@ static NSString *const countryPicker_listView_cell_id_1 = @"countryPicker_listVi
         _listView = [[UITableView alloc] initWithFrame:CGRectZero];
         _listView.delegate = self;
         _listView.dataSource = self;
-        [_listView registerClass:[CountryCell class] forCellReuseIdentifier:countryPicker_listView_cell_id_1];
+        [_listView registerClass:[EMCCountryCell class] forCellReuseIdentifier:countryPicker_listView_cell_id_1];
         if (@available(iOS 11.0, *)) {
             _listView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
         } else {

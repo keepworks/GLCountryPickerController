@@ -7,7 +7,7 @@
 //
 
 #import "DemoController.h"
-#import "CountryPicker.h"
+#import "EMCCountryPicker.h"
 @interface DemoController () <EMCCountryDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *countryIconView;
@@ -25,7 +25,7 @@
 
 - (IBAction)p_showCountryPickerController:(UIButton *)sender {
     
-    CountryPickerController *pickerVC = [[CountryPickerController alloc] initWithAvailableCountryCodes:nil];
+    EMCCountryPickerController *pickerVC = [[EMCCountryPickerController alloc] initWithAvailableCountryCodes:nil];
     pickerVC.countryDelegate = self;
     
     [self.navigationController pushViewController:pickerVC animated:YES];

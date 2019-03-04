@@ -6,10 +6,17 @@ a country from a searchable list.  The available countries are taken from the
 [ISO 3166-1 standard][iso3166], whose [ISO 3166-1 alpha-2][iso31662] two-letter
 country codes are used by the API to represent countries, and international call dialing codes are also available
 
-This pod is based on the EMCCountryPickerController
+This pod is based on the EMCCountryPickerController+DialingCodes
 
 [iso3166]: http://en.wikipedia.org/wiki/ISO_3166
 [iso31662]: http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+
+---
+## 1.5.0 change log
+1. 重写了Demo
+2. 优化了搜索控制器
+
+---
 
 Features
 --------

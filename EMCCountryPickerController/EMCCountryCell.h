@@ -1,5 +1,5 @@
 //
-//  CountryCell.h
+//  EMCCountryCell.h
 //  EMCCountryPickerController
 //
 //  Created by walker on 2018/9/17.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 @class EMCCountry;
-@interface CountryCell : UITableViewCell
+@interface EMCCountryCell : UITableViewCell
 
 /**
  更新数据

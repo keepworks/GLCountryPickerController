@@ -1,14 +1,14 @@
 //
-//  CountryCell.m
+//  EMCCountryCell.m
 //  EMCCountryPickerController
 //
 //  Created by walker on 2018/9/17.
 //  Copyright © 2018年 Enrico. All rights reserved.
 //
 
-#import "CountryCell.h"
+#import "EMCCountryCell.h"
 #import "EMCCountry.h"
-@interface CountryCell ()
+@interface EMCCountryCell ()
 
 /** icon */
 @property (strong, nonatomic) UIImageView *countryImgView;
@@ -26,7 +26,7 @@
 @property (strong, nonatomic) NSLocale *displayLocale;
 @end
 
-@implementation CountryCell
+@implementation EMCCountryCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {

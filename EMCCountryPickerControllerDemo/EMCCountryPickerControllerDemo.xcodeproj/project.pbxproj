@@ -20,8 +20,8 @@
 		F8C737C4222918EB002E50E5 /* DemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C737C2222918EB002E50E5 /* DemoController.m */; };
 		F8C737C5222918EB002E50E5 /* DemoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8C737C3222918EB002E50E5 /* DemoController.xib */; };
 		F8C737C722292231002E50E5 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8C737C622292231002E50E5 /* Launch Screen.storyboard */; };
-		F8C737CC22292771002E50E5 /* CountryPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C737C822292771002E50E5 /* CountryPickerController.m */; };
-		F8C737CD22292771002E50E5 /* CountryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C737CB22292771002E50E5 /* CountryCell.m */; };
+		F8C737CC22292771002E50E5 /* EMCCountryPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C737C822292771002E50E5 /* EMCCountryPickerController.m */; };
+		F8C737CD22292771002E50E5 /* EMCCountryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C737CB22292771002E50E5 /* EMCCountryCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,15 +42,15 @@
 		90FE0BBD192F99650056E748 /* CPCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPCAppDelegate.h; sourceTree = "<group>"; };
 		90FE0BBE192F99650056E748 /* CPCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPCAppDelegate.m; sourceTree = "<group>"; };
 		90FE0BC9192F99660056E748 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F81AD188222CCA3400CBF978 /* CountryPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountryPicker.h; sourceTree = "<group>"; };
+		F81AD188222CCA3400CBF978 /* EMCCountryPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EMCCountryPicker.h; sourceTree = "<group>"; };
 		F8C737C1222918EB002E50E5 /* DemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoController.h; sourceTree = "<group>"; };
 		F8C737C2222918EB002E50E5 /* DemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoController.m; sourceTree = "<group>"; };
 		F8C737C3222918EB002E50E5 /* DemoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoController.xib; sourceTree = "<group>"; };
 		F8C737C622292231002E50E5 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		F8C737C822292771002E50E5 /* CountryPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryPickerController.m; sourceTree = "<group>"; };
-		F8C737C922292771002E50E5 /* CountryPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountryPickerController.h; sourceTree = "<group>"; };
-		F8C737CA22292771002E50E5 /* CountryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountryCell.h; sourceTree = "<group>"; };
-		F8C737CB22292771002E50E5 /* CountryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryCell.m; sourceTree = "<group>"; };
+		F8C737C822292771002E50E5 /* EMCCountryPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMCCountryPickerController.m; sourceTree = "<group>"; };
+		F8C737C922292771002E50E5 /* EMCCountryPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCCountryPickerController.h; sourceTree = "<group>"; };
+		F8C737CA22292771002E50E5 /* EMCCountryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCCountryCell.h; sourceTree = "<group>"; };
+		F8C737CB22292771002E50E5 /* EMCCountryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMCCountryCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,11 +76,11 @@
 				8CA8FDA41C550DEA004B8A13 /* EMCCountryDelegate.h */,
 				8CA8FDA51C550DEA004B8A13 /* EMCCountryManager.h */,
 				8CA8FDA61C550DEA004B8A13 /* EMCCountryManager.m */,
-				F8C737CA22292771002E50E5 /* CountryCell.h */,
-				F8C737CB22292771002E50E5 /* CountryCell.m */,
-				F8C737C922292771002E50E5 /* CountryPickerController.h */,
-				F8C737C822292771002E50E5 /* CountryPickerController.m */,
-				F81AD188222CCA3400CBF978 /* CountryPicker.h */,
+				F8C737CA22292771002E50E5 /* EMCCountryCell.h */,
+				F8C737CB22292771002E50E5 /* EMCCountryCell.m */,
+				F8C737C922292771002E50E5 /* EMCCountryPickerController.h */,
+				F8C737C822292771002E50E5 /* EMCCountryPickerController.m */,
+				F81AD188222CCA3400CBF978 /* EMCCountryPicker.h */,
 			);
 			name = EMCCountryPickerController;
 			path = ../EMCCountryPickerController;
@@ -213,13 +213,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8C737CC22292771002E50E5 /* CountryPickerController.m in Sources */,
+				F8C737CC22292771002E50E5 /* EMCCountryPickerController.m in Sources */,
 				8CA8FDAC1C550DEA004B8A13 /* EMCCountry.m in Sources */,
 				F8C737C4222918EB002E50E5 /* DemoController.m in Sources */,
 				90FE0BBB192F99650056E748 /* main.m in Sources */,
 				8CA8FDAD1C550DEA004B8A13 /* EMCCountryManager.m in Sources */,
 				90FE0BBF192F99650056E748 /* CPCAppDelegate.m in Sources */,
-				F8C737CD22292771002E50E5 /* CountryCell.m in Sources */,
+				F8C737CD22292771002E50E5 /* EMCCountryCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

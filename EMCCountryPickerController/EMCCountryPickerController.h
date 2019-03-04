@@ -1,5 +1,5 @@
 //
-//  CountryPickerController.h
+//  EMCCountryPickerController.h
 //  EMCCountryPickerController
 //
 //  Created by walker on 2018/9/17.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "EMCCountryDelegate.h"
 
-@interface CountryPickerController : UIViewController
+@interface EMCCountryPickerController : UIViewController
 
 /** 国家名称展示的语言时区 */
 @property (strong, nonatomic) NSLocale *countryNameDisplayLocale;

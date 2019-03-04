@@ -1,5 +1,5 @@
 //
-//  CountryPicker.h
+//  EMCCountryPicker.h
 //  EMCCountryPickerControllerDemo
 //
 //  Created by 幽雅的暴君 on 2019/3/4.
@@ -11,4 +11,4 @@
 #import "EMCCountry.h"
 #import "EMCCountryDelegate.h"
 #import "EMCCountryManager.h"
-#import "CountryPickerController.h"
+#import "EMCCountryPickerController.h"
