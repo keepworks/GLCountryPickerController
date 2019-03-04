@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F81AD235222D328100CBF978 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F81AD234222D328100CBF978 /* AppDelegate.m */; };
+		F81AD23D222D328200CBF978 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F81AD23C222D328200CBF978 /* Assets.xcassets */; };
+		F81AD240222D328200CBF978 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F81AD23E222D328200CBF978 /* LaunchScreen.storyboard */; };
+		F81AD243222D328200CBF978 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F81AD242222D328200CBF978 /* main.m */; };
+		F81AD24D222D328200CBF978 /* GLCountryPickerControllerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F81AD24C222D328200CBF978 /* GLCountryPickerControllerDemoTests.m */; };
+		F81AD258222D328200CBF978 /* GLCountryPickerControllerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F81AD257222D328200CBF978 /* GLCountryPickerControllerDemoUITests.m */; };
+		F81AD282222D368C00CBF978 /* GLCountryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F81AD277222D368C00CBF978 /* GLCountryManager.m */; };
+		F81AD284222D368C00CBF978 /* GLCountryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F81AD27A222D368C00CBF978 /* GLCountryCell.m */; };
+		F81AD285222D368C00CBF978 /* GLCountry.m in Sources */ = {isa = PBXBuildFile; fileRef = F81AD27B222D368C00CBF978 /* GLCountry.m */; };
+		F81AD286222D368C00CBF978 /* GLCountryPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F81AD27D222D368C00CBF978 /* GLCountryPickerController.m */; };
+		F81AD28A222D3D0D00CBF978 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F81AD288222D3D0D00CBF978 /* ViewController.m */; };
+		F81AD28B222D3D0D00CBF978 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F81AD289222D3D0D00CBF978 /* ViewController.xib */; };
+		F81ADA74222D41C400CBF978 /* GLCountryPickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F81ADA73222D41C400CBF978 /* GLCountryPickerController.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F81AD249222D328200CBF978 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F81AD228222D328100CBF978 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F81AD22F222D328100CBF978;
+			remoteInfo = GLCountryPickerControllerDemo;
+		};
+		F81AD254222D328200CBF978 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F81AD228222D328100CBF978 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F81AD22F222D328100CBF978;
+			remoteInfo = GLCountryPickerControllerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F81AD230222D328100CBF978 /* GLCountryPickerControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLCountryPickerControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F81AD233222D328100CBF978 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F81AD234222D328100CBF978 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F81AD23C222D328200CBF978 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F81AD23F222D328200CBF978 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F81AD241222D328200CBF978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F81AD242222D328200CBF978 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F81AD248222D328200CBF978 /* GLCountryPickerControllerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GLCountryPickerControllerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F81AD24C222D328200CBF978 /* GLCountryPickerControllerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLCountryPickerControllerDemoTests.m; sourceTree = "<group>"; };
+		F81AD24E222D328200CBF978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F81AD253222D328200CBF978 /* GLCountryPickerControllerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GLCountryPickerControllerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F81AD257222D328200CBF978 /* GLCountryPickerControllerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLCountryPickerControllerDemoUITests.m; sourceTree = "<group>"; };
+		F81AD259222D328200CBF978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F81AD277222D368C00CBF978 /* GLCountryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLCountryManager.m; sourceTree = "<group>"; };
+		F81AD278222D368C00CBF978 /* GLCountryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLCountryManager.h; sourceTree = "<group>"; };
+		F81AD27A222D368C00CBF978 /* GLCountryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLCountryCell.m; sourceTree = "<group>"; };
+		F81AD27B222D368C00CBF978 /* GLCountry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLCountry.m; sourceTree = "<group>"; };
+		F81AD27C222D368C00CBF978 /* GLCountryDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLCountryDelegate.h; sourceTree = "<group>"; };
+		F81AD27D222D368C00CBF978 /* GLCountryPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLCountryPickerController.m; sourceTree = "<group>"; };
+		F81AD27E222D368C00CBF978 /* GLCountryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLCountryCell.h; sourceTree = "<group>"; };
+		F81AD27F222D368C00CBF978 /* GLCountry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLCountry.h; sourceTree = "<group>"; };
+		F81AD280222D368C00CBF978 /* GLCountryPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLCountryPickerController.h; sourceTree = "<group>"; };
+		F81AD281222D368C00CBF978 /* GLCountryPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLCountryPicker.h; sourceTree = "<group>"; };
+		F81AD287222D3D0D00CBF978 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F81AD288222D3D0D00CBF978 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F81AD289222D3D0D00CBF978 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		F81ADA73222D41C400CBF978 /* GLCountryPickerController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GLCountryPickerController.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F81AD22D222D328100CBF978 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F81AD245222D328200CBF978 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F81AD250222D328200CBF978 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F81AD227222D328100CBF978 = {
+			isa = PBXGroup;
+			children = (
+				F81AD276222D368C00CBF978 /* GLCountryPickerController */,
+				F81AD232222D328100CBF978 /* GLCountryPickerControllerDemo */,
+				F81AD24B222D328200CBF978 /* GLCountryPickerControllerDemoTests */,
+				F81AD256222D328200CBF978 /* GLCountryPickerControllerDemoUITests */,
+				F81AD231222D328100CBF978 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F81AD231222D328100CBF978 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F81AD230222D328100CBF978 /* GLCountryPickerControllerDemo.app */,
+				F81AD248222D328200CBF978 /* GLCountryPickerControllerDemoTests.xctest */,
+				F81AD253222D328200CBF978 /* GLCountryPickerControllerDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F81AD232222D328100CBF978 /* GLCountryPickerControllerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F81AD233222D328100CBF978 /* AppDelegate.h */,
+				F81AD234222D328100CBF978 /* AppDelegate.m */,
+				F81AD287222D3D0D00CBF978 /* ViewController.h */,
+				F81AD288222D3D0D00CBF978 /* ViewController.m */,
+				F81AD289222D3D0D00CBF978 /* ViewController.xib */,
+				F81AD23C222D328200CBF978 /* Assets.xcassets */,
+				F81AD23E222D328200CBF978 /* LaunchScreen.storyboard */,
+				F81AD241222D328200CBF978 /* Info.plist */,
+				F81AD242222D328200CBF978 /* main.m */,
+			);
+			path = GLCountryPickerControllerDemo;
+			sourceTree = "<group>";
+		};
+		F81AD24B222D328200CBF978 /* GLCountryPickerControllerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F81AD24C222D328200CBF978 /* GLCountryPickerControllerDemoTests.m */,
+				F81AD24E222D328200CBF978 /* Info.plist */,
+			);
+			path = GLCountryPickerControllerDemoTests;
+			sourceTree = "<group>";
+		};
+		F81AD256222D328200CBF978 /* GLCountryPickerControllerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F81AD257222D328200CBF978 /* GLCountryPickerControllerDemoUITests.m */,
+				F81AD259222D328200CBF978 /* Info.plist */,
+			);
+			path = GLCountryPickerControllerDemoUITests;
+			sourceTree = "<group>";
+		};
+		F81AD276222D368C00CBF978 /* GLCountryPickerController */ = {
+			isa = PBXGroup;
+			children = (
+				F81ADA73222D41C400CBF978 /* GLCountryPickerController.bundle */,
+				F81AD277222D368C00CBF978 /* GLCountryManager.m */,
+				F81AD278222D368C00CBF978 /* GLCountryManager.h */,
+				F81AD27A222D368C00CBF978 /* GLCountryCell.m */,
+				F81AD27B222D368C00CBF978 /* GLCountry.m */,
+				F81AD27C222D368C00CBF978 /* GLCountryDelegate.h */,
+				F81AD27D222D368C00CBF978 /* GLCountryPickerController.m */,
+				F81AD27E222D368C00CBF978 /* GLCountryCell.h */,
+				F81AD27F222D368C00CBF978 /* GLCountry.h */,
+				F81AD280222D368C00CBF978 /* GLCountryPickerController.h */,
+				F81AD281222D368C00CBF978 /* GLCountryPicker.h */,
+			);
+			name = GLCountryPickerController;
+			path = ../GLCountryPickerController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F81AD22F222D328100CBF978 /* GLCountryPickerControllerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F81AD25C222D328200CBF978 /* Build configuration list for PBXNativeTarget "GLCountryPickerControllerDemo" */;
+			buildPhases = (
+				F81AD22C222D328100CBF978 /* Sources */,
+				F81AD22D222D328100CBF978 /* Frameworks */,
+				F81AD22E222D328100CBF978 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GLCountryPickerControllerDemo;
+			productName = GLCountryPickerControllerDemo;
+			productReference = F81AD230222D328100CBF978 /* GLCountryPickerControllerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F81AD247222D328200CBF978 /* GLCountryPickerControllerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F81AD25F222D328200CBF978 /* Build configuration list for PBXNativeTarget "GLCountryPickerControllerDemoTests" */;
+			buildPhases = (
+				F81AD244222D328200CBF978 /* Sources */,
+				F81AD245222D328200CBF978 /* Frameworks */,
+				F81AD246222D328200CBF978 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F81AD24A222D328200CBF978 /* PBXTargetDependency */,
+			);
+			name = GLCountryPickerControllerDemoTests;
+			productName = GLCountryPickerControllerDemoTests;
+			productReference = F81AD248222D328200CBF978 /* GLCountryPickerControllerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F81AD252222D328200CBF978 /* GLCountryPickerControllerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F81AD262222D328200CBF978 /* Build configuration list for PBXNativeTarget "GLCountryPickerControllerDemoUITests" */;
+			buildPhases = (
+				F81AD24F222D328200CBF978 /* Sources */,
+				F81AD250222D328200CBF978 /* Frameworks */,
+				F81AD251222D328200CBF978 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F81AD255222D328200CBF978 /* PBXTargetDependency */,
+			);
+			name = GLCountryPickerControllerDemoUITests;
+			productName = GLCountryPickerControllerDemoUITests;
+			productReference = F81AD253222D328200CBF978 /* GLCountryPickerControllerDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F81AD228222D328100CBF978 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = ghostlord;
+				TargetAttributes = {
+					F81AD22F222D328100CBF978 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F81AD247222D328200CBF978 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F81AD22F222D328100CBF978;
+					};
+					F81AD252222D328200CBF978 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F81AD22F222D328100CBF978;
+					};
+				};
+			};
+			buildConfigurationList = F81AD22B222D328100CBF978 /* Build configuration list for PBXProject "GLCountryPickerControllerDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F81AD227222D328100CBF978;
+			productRefGroup = F81AD231222D328100CBF978 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F81AD22F222D328100CBF978 /* GLCountryPickerControllerDemo */,
+				F81AD247222D328200CBF978 /* GLCountryPickerControllerDemoTests */,
+				F81AD252222D328200CBF978 /* GLCountryPickerControllerDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F81AD22E222D328100CBF978 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F81AD28B222D3D0D00CBF978 /* ViewController.xib in Resources */,
+				F81AD240222D328200CBF978 /* LaunchScreen.storyboard in Resources */,
+				F81ADA74222D41C400CBF978 /* GLCountryPickerController.bundle in Resources */,
+				F81AD23D222D328200CBF978 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F81AD246222D328200CBF978 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F81AD251222D328200CBF978 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F81AD22C222D328100CBF978 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F81AD285222D368C00CBF978 /* GLCountry.m in Sources */,
+				F81AD28A222D3D0D00CBF978 /* ViewController.m in Sources */,
+				F81AD286222D368C00CBF978 /* GLCountryPickerController.m in Sources */,
+				F81AD243222D328200CBF978 /* main.m in Sources */,
+				F81AD235222D328100CBF978 /* AppDelegate.m in Sources */,
+				F81AD284222D368C00CBF978 /* GLCountryCell.m in Sources */,
+				F81AD282222D368C00CBF978 /* GLCountryManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F81AD244222D328200CBF978 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F81AD24D222D328200CBF978 /* GLCountryPickerControllerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F81AD24F222D328200CBF978 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F81AD258222D328200CBF978 /* GLCountryPickerControllerDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F81AD24A222D328200CBF978 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F81AD22F222D328100CBF978 /* GLCountryPickerControllerDemo */;
+			targetProxy = F81AD249222D328200CBF978 /* PBXContainerItemProxy */;
+		};
+		F81AD255222D328200CBF978 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F81AD22F222D328100CBF978 /* GLCountryPickerControllerDemo */;
+			targetProxy = F81AD254222D328200CBF978 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F81AD23E222D328200CBF978 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F81AD23F222D328200CBF978 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F81AD25A222D328200CBF978 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F81AD25B222D328200CBF978 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F81AD25D222D328200CBF978 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9RJ9BYTDZ3;
+				INFOPLIST_FILE = GLCountryPickerControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghostlord.Demo.GLCountryPickerControllerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F81AD25E222D328200CBF978 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9RJ9BYTDZ3;
+				INFOPLIST_FILE = GLCountryPickerControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghostlord.Demo.GLCountryPickerControllerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F81AD260222D328200CBF978 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9RJ9BYTDZ3;
+				INFOPLIST_FILE = GLCountryPickerControllerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghostlord.Demo.GLCountryPickerControllerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GLCountryPickerControllerDemo.app/GLCountryPickerControllerDemo";
+			};
+			name = Debug;
+		};
+		F81AD261222D328200CBF978 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9RJ9BYTDZ3;
+				INFOPLIST_FILE = GLCountryPickerControllerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghostlord.Demo.GLCountryPickerControllerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GLCountryPickerControllerDemo.app/GLCountryPickerControllerDemo";
+			};
+			name = Release;
+		};
+		F81AD263222D328200CBF978 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9RJ9BYTDZ3;
+				INFOPLIST_FILE = GLCountryPickerControllerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghostlord.Demo.GLCountryPickerControllerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GLCountryPickerControllerDemo;
+			};
+			name = Debug;
+		};
+		F81AD264222D328200CBF978 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9RJ9BYTDZ3;
+				INFOPLIST_FILE = GLCountryPickerControllerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghostlord.Demo.GLCountryPickerControllerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GLCountryPickerControllerDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F81AD22B222D328100CBF978 /* Build configuration list for PBXProject "GLCountryPickerControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F81AD25A222D328200CBF978 /* Debug */,
+				F81AD25B222D328200CBF978 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F81AD25C222D328200CBF978 /* Build configuration list for PBXNativeTarget "GLCountryPickerControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F81AD25D222D328200CBF978 /* Debug */,
+				F81AD25E222D328200CBF978 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F81AD25F222D328200CBF978 /* Build configuration list for PBXNativeTarget "GLCountryPickerControllerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F81AD260222D328200CBF978 /* Debug */,
+				F81AD261222D328200CBF978 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F81AD262222D328200CBF978 /* Build configuration list for PBXNativeTarget "GLCountryPickerControllerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F81AD263222D328200CBF978 /* Debug */,
+				F81AD264222D328200CBF978 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F81AD228222D328100CBF978 /* Project object */;
+}

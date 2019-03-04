@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="countryIconView" destination="ap7-ec-QOn" id="Leu-xJ-70L"/>
+                <outlet property="dialingCodesLabel" destination="d0f-8m-Mu1" id="m3J-B9-N1h"/>
+                <outlet property="nameLabel" destination="8UR-JS-3Gy" id="aOv-G6-3lM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axa-WG-zes">
+                    <rect key="frame" x="97" y="100" width="181" height="30"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="cK6-wY-cSy"/>
+                    </constraints>
+                    <state key="normal" title="  CountryPickerController  "/>
+                    <connections>
+                        <action selector="selectedCountryBtnAction:" destination="-1" eventType="touchUpInside" id="5lY-5X-AhX"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name:--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8UR-JS-3Gy">
+                    <rect key="frame" x="50" y="250" width="275" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="91e-07-ml0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DialingCodes:--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0f-8m-Mu1">
+                    <rect key="frame" x="50" y="301" width="275" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="1Rx-zc-d5b"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="ap7-ec-QOn">
+                    <rect key="frame" x="152.5" y="170" width="70" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="2LN-1k-mW1"/>
+                        <constraint firstAttribute="height" constant="50" id="6VN-Dx-oeP"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ap7-ec-QOn" firstAttribute="top" secondItem="axa-WG-zes" secondAttribute="bottom" constant="40" id="2kF-is-X0A"/>
+                <constraint firstItem="axa-WG-zes" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="80" id="3s5-pO-Ylq"/>
+                <constraint firstItem="8UR-JS-3Gy" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="50" id="DXX-kE-pgY"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="8UR-JS-3Gy" secondAttribute="trailing" constant="50" id="Fyn-lf-80A"/>
+                <constraint firstItem="d0f-8m-Mu1" firstAttribute="top" secondItem="8UR-JS-3Gy" secondAttribute="bottom" constant="30" id="Iec-hU-d6P"/>
+                <constraint firstItem="d0f-8m-Mu1" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="50" id="gij-Bm-qws"/>
+                <constraint firstItem="axa-WG-zes" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hRO-fB-2CW"/>
+                <constraint firstItem="ap7-ec-QOn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lfz-t1-UVM"/>
+                <constraint firstItem="8UR-JS-3Gy" firstAttribute="top" secondItem="ap7-ec-QOn" secondAttribute="bottom" constant="30" id="oPZ-oh-I21"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="d0f-8m-Mu1" secondAttribute="trailing" constant="50" id="uR5-cW-IZ0"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="placeholder" width="111" height="100"/>
+    </resources>
+</document>
