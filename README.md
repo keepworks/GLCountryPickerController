@@ -1,7 +1,7 @@
-EMCCountryPickerController+DialingCodes
+GLCountryPickerController
 ==========================
 
-`EMCCountryPickerController+DialingCodes` is a view controller that allow users to choose
+`GLCountryPickerController` is a view controller that allow users to choose
 a country from a searchable list.  The available countries are taken from the
 [ISO 3166-1 standard][iso3166], whose [ISO 3166-1 alpha-2][iso31662] two-letter
 country codes are used by the API to represent countries, and international call dialing codes are also available
@@ -14,9 +14,9 @@ This pod is based on the EMCCountryPickerController+DialingCodes
 ---
 ## 1.5.0 change log
 1. 重写了Demo
-2. 优化了搜索控制器
-
----
+2. 优化了搜索控制器的UI布局,增强了搜索功能，添加了按照电话区号搜索国家的功能
+3. 由于与 `EMCCountryPickerController+DialingCodes` 重名时发布失败，故将库名称修改为`GLCountryPickerController`
+--
 
 Features
 --------
